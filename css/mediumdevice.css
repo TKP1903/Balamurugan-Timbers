@@ -1,0 +1,115 @@
+@media (min-width: 1800px) {
+  .contact-image-section {
+    position: relative;
+    /* left: 10%;
+    transform: translateX(-10%); */
+    width: 1200px;
+    margin: auto;
+    height: 400px;
+  }
+  .map-section {
+    margin: auto;
+    height: 600px !important;
+    width: 1200px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner {
+    height: 350px;
+    width: 100vw;
+  }
+
+  .slide-text--1,
+  .slide-text--2 {
+    font-size: 32px;
+  }
+  .below-banner-text h2 {
+    font-size: 25px !important;
+    line-height: 45px;
+  }
+
+  /* about */
+  .about-section {
+    padding: 120px 0px 50px;
+  }
+
+  .about-head-text--1 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #505050;
+  }
+  .about-head-text--2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+  }
+  /* --------------about end -------------*/
+
+  /* ------------------------- services------------------ */
+
+  .services-head h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .card-text {
+    bottom: 10px;
+    padding: 16px;
+  }
+  .card-text--1 {
+    font-size: 16px;
+  }
+  .card-text--2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+  }
+  /* ----------------- service end------------------- */
+
+  /* ----------------- product ----------------------- */
+  .product-section {
+    padding: 120px 0px 80px;
+  }
+  /* product end */
+
+  /* contactus (footer */
+  .address-container .address .address-text {
+    font-size: 18px;
+  }
+  /* contact us end */
+  /* ------------------------------------------------------------------------------------------------
+  ----------------------------Main Page end----------------------------------------------------------
+  --------------------------------------------------------------------------------------------------- */
+
+  .contact-image-section {
+    height: 300px;
+    position: relative;
+  }
+
+  .contact-main-section {
+    padding: 60px 0px 60px;
+  }
+
+  .map-section {
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .head {
+    font-size: 32px;
+  }
+  .address-card {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .cp_address-container .address-text {
+    font-size: 16px;
+  }
+  .form-submit-button {
+    width: 150px;
+  }
+}

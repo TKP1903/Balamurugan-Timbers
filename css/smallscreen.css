@@ -1,0 +1,315 @@
+@media (max-width: 767.98px) {
+  .sidebar-backdrop {
+    display: block;
+  }
+  .navbar-section {
+    display: none;
+  }
+  .navbar-2-container {
+    display: none;
+  }
+  .navbar-2-mob-container {
+    display: block;
+  }
+  .navbar-2 {
+    text-align: center;
+    height: 80px;
+  }
+  .banner {
+    height: 250px;
+  }
+
+  .slide-text--1,
+  .slide-text--2 {
+    font-size: 25px;
+  }
+
+  .below-banner-text h2 {
+    font-size: 18px !important;
+    line-height: 45px;
+  }
+
+  /* about */
+  .about-section {
+    padding: 50px 0px 0px;
+  }
+  .about-head-text--1 {
+    font-size: 20px;
+  }
+  .about-head-text--2 {
+    font-size: 26px;
+  }
+
+  .about-main {
+    font-size: 14px;
+  }
+
+  /* ------------------------- about end------------------ */
+
+  /* ------------------------- services------------------ */
+
+  .services-head h2 {
+    font-size: 26px;
+  }
+
+  .card-text {
+    bottom: 30px;
+    padding: 20px;
+  }
+  .card-text--1 {
+    font-size: 26px;
+  }
+  .card-text--2 {
+    font-size: 16px;
+  }
+  /* ----------------- service end------------------- */
+
+  /* ----------------- Product ------------------- */
+
+  .product-head h2 {
+    font-size: 30px;
+  }
+  /* ----------------- product end------------------- */
+  /* contact-us(footer) */
+  .quick-link-container .quick-link a {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  /*---------------------------------------------------------------------------------------------------
+  ---------------------------------------- Main Page End --------------------------------------------
+  -----------------------------------------------------------------------------------------------------*/
+  .contact-image-section {
+    height: 280px;
+  }
+  .contact-image-text {
+    font-size: 30px;
+  }
+
+  .contact-main-section {
+    padding: 50px 0px 50px;
+  }
+  .contact-main-head {
+    font-size: 30px;
+  }
+
+  .contact-main-text p {
+    font-size: 14px;
+  }
+
+  .map-section {
+    height: 50vh;
+    width: 100vw;
+  }
+  .head {
+    font-size: 26px;
+  }
+
+  .address-card {
+    /* width: 300px; */
+    margin: auto;
+  }
+
+  .cp_address-container .address-text {
+    font-size: 16px;
+  }
+  .cp_address-head {
+    font-size: 22px;
+  }
+  .cp_address-head::before {
+    width: 200px;
+  }
+  .address-container .address .address-icon::before {
+    font-size: 3x0px;
+  }
+  .quick-link-container .quick-link .social-icons {
+    color: #fff;
+    font-size: 28px;
+    text-align: center !important;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------
+  ---------------O---------------------------------------------------------------------------------------------
+  --------------O----OO------------------------------------------------------------------------------------------
+  -------------O----OO------------------------------------------------------------------------------------------
+  ------------OOOOOOOOOOO----------------------------------------------------- ----------------------------------
+  ----------------OO------------------------------------------------------------------------------------------
+  ---------------OO------------------------------------------------------------------------------------------*/
+
+@media (max-width: 407px) {
+  .sidebar-backdrop {
+    display: block;
+  }
+  .icon-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 30px;
+    /* right: 10px; */
+  }
+  .menu-logo {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+  }
+  .navbar-2 {
+    text-align: center;
+    height: 60px;
+  }
+  button {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+    margin: 0 !important;
+    width: fit-content;
+  }
+  .banner {
+    height: 200px;
+  }
+
+  .slide-text--1,
+  .slide-text--2 {
+    font-size: 15px;
+  }
+  .below-banner-text {
+    margin: 4px auto 2px auto !important;
+    height: 40px !important;
+  }
+  .below-banner-text h2 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+
+  /* about */
+  .about-head-text--1 {
+    font-size: 18px;
+  }
+  .about-head-text--2 {
+    font-size: 22px;
+  }
+
+  .about-main {
+    font-size: 12px;
+  }
+
+  /* ------------------------- about end ------------------ */
+
+  /* ------------------------- services------------------ */
+
+  .services-head h2 span::before,
+  .services-head h2 span::after {
+    content: "";
+    position: absolute;
+    width: 113px;
+    height: 1px;
+    background-color: #f7a145;
+  }
+  .services-head h2 span::before {
+    top: 33px;
+    left: -80px;
+  }
+  .services-head h2 span::after {
+    top: 40px;
+    left: -40px;
+  }
+
+  .services-head h2 {
+    font-size: 22px;
+  }
+
+  .card-text {
+    bottom: 20px;
+    padding: 15px;
+  }
+  .card-text--1 {
+    font-size: 22px;
+  }
+  .card-text--2 {
+    font-size: 14px;
+  }
+
+  /* ----------------- service end------------------- */
+
+  /* ----------------- prouct ------------------------- */
+
+  .product-head h2 span::before,
+  .product-head h2 span::after {
+    width: 113px;
+    height: 1px;
+  }
+  .product-head h2 span::before {
+    top: 43px;
+    /* left: 15px; */
+  }
+  .product-head h2 span::after {
+    top: 50px;
+    /* left: 0px; */
+  }
+  .product-head h2 {
+    font-size: 22px;
+  }
+  .product-cat-container {
+    margin-top: 20px;
+  }
+  /* product end */
+  /* footer */
+  .contact-title {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+
+  .quick-link-container .quick-link .social-icons {
+    color: #fff;
+    font-size: 28px;
+    text-align: center !important;
+  }
+
+  .quick-link-container .quick-link {
+    margin: 10px 0;
+    line-height: 120%;
+  }
+  .quick-link-container .quick-link {
+    margin: 20px 0;
+  }
+  .quick-link-container .quick-link a {
+    font-size: 16px;
+  }
+  .address-container .address .address-icon::before {
+    font-size: 25px;
+  }
+  .address-container .address .address-icon {
+    vertical-align: super;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+  }
+  .address-container .address .address-text {
+    font-size: 16px;
+  }
+  /*---------------------------------------------------------------------------------------------------
+  ---------------------------------------- Main Page End --------------------------------------------
+  -----------------------------------------------------------------------------------------------------*/
+  .contact-image-section {
+    height: 250px;
+  }
+  .contact-image-text {
+    font-size: 20px;
+  }
+
+  .contact-main-section {
+    padding: 40px 0px;
+  }
+  .contact-main-head {
+    font-size: 22px;
+  }
+  .contact-main-text p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .head {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,123 @@
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 999999999 !important; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #342e2e; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease-in-out;
+  transform-origin: center center;
+  overflow: hidden;
+  transform: scale(0);
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f7a145;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a.active {
+  background: #f7a145;
+  color: #342e2e;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: all 0.5s ease-in-out;
+  /* padding: 20px; */
+}
+
+.sidebar-logo-img {
+  height: 200px;
+  width: 150px;
+  margin: 20px 50px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* @media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+} */
+
+@media (max-width: 750px) {
+  .menu-logo {
+    top: -20px;
+    left: 300px;
+  }
+}
+@media (max-width: 650px) {
+  .menu-logo {
+    top: -20px;
+    left: 250px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu-logo {
+    top: -20px;
+    left: 200px !important;
+  }
+}
+@media (max-width: 480px) {
+  .menu-logo {
+    top: -5px;
+    left: 160px !important;
+  }
+  .menu-logo img {
+    height: 95px !important;
+    width: 95px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-logo {
+    left: 150px !important;
+  }
+  .menu-logo img {
+    height: 75px !important;
+    width: 75px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu-logo {
+    left: 130px !important;
+  }
+  .menu-logo img {
+    height: 75px !important;
+    width: 75px !important;
+  }
+}

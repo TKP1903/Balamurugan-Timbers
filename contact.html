@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balamurugan Timber</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/mediumdevice.css" />
+    <link rel="stylesheet" href="css/smallscreen.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script src="https://use.fontawesome.com/37ad381857.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwWBqPzgoXMKDi4RKFg0mWq1SJB1iAsxs&callback=initMap"
+    ></script>
+  </head>
+  <body>
+    <div id="main">
+      <!-- navbar -->
+      <section id="home" class="navbar-section">
+        <div class="container">
+          <div
+            class="row justify-content-between navbar-top .d-none .d-md-block .d-lg-none"
+          >
+            <div class="col-4 my-auto"></div>
+            <div class="col-4 text-center my-auto main-logo">
+              <a href="./index.html">
+                <img src="./assets/logo.png" alt="BalamuruganTimber" />
+              </a>
+            </div>
+            <div class="col-4 text-right my-auto">
+              <div class="cell-no">Call:+91904-302-6120</div>
+            </div>
+            <!-- icons -->
+          </div>
+        </div>
+      </section>
+
+      <!-- navbar 2 -->
+      <section>
+        <div class="navbar-2 row mx-0">
+          <div
+            class="navbar-2-mob-container text-center"
+            style="position: relative;"
+          >
+            <div class="icon-btn" id="menu-btn">
+              <i class="fa fa-bars"></i>
+            </div>
+            <div class="menu-logo">
+              <div class="">
+                <a href="./index.html">
+                  <img
+                    src="assets/logo.png"
+                    alt="BalamuruganTimber"
+                    style="height: 120px; width: 120px;"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container my-auto navbar-2-container">
+            <div class="navbar-2-logo">
+              <a href="./index.html">
+                <img
+                  src="./assets/logo.png"
+                  alt="BalamuruganTimber"
+                  style="height: 100px; width: 100px;"
+                />
+              </a>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+              <ul class="nav-item-container text-uppercase my-auto">
+                <li>
+                  <a href="index.html#home">Home</a>
+                </li>
+                <li>
+                  <a href="index.html#about">About</a>
+                </li>
+                <li>
+                  <a href="index.html#services">Services</a>
+                </li>
+                <li>
+                  <a href="./products.html">Products</a>
+                </li>
+                <li class="active">
+                  <a href="#contactus">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner-->
+      <section class="contact-image-section">
+        <div class="contact-image-container">
+          <img src="./assets/images/padauck.jpg" alt="" />
+          <div class="contact-image-text">
+            contact us
+          </div>
+        </div>
+      </section>
+
+      <!-- address -->
+      <section class="contact-main-section">
+        <div class="contact-main container">
+          <div class="contact-main-head">
+            WHERE TO <span style="color: #f7a145;"> FIND US</span>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+              <div class="contact-main-text">
+                <p>
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                  amet, te consec tetur, adipisci velit, sed quia non numquam
+                  eius modi tempora incidunt
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- map  -->
+      <section class="map-section">
+        <div class="map-container" id="map-container"></div>
+      </section>
+      <!-- map end -->
+
+      <!-- contact -->
+      <section class="cp_contact-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-8">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-10">
+                  <h2 class="head">Send us a message</h2>
+                </div>
+                <div class="col-md-6 col-sm-10">
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div class="col-md-6 col-sm-10">
+                  <input type="text" placeholder="Email Address" id="email" />
+                </div>
+                <div class="col-md-6 col-sm-10">
+                  <input type="text" placeholder="Company" id="company" />
+                </div>
+                <div class="col-md-6 col-sm-10">
+                  <input type="text" placeholder="Phone" id="phoneno" />
+                </div>
+                <div class="col-sm-10 col-md-12">
+                  <textarea
+                    name=""
+                    rows="10"
+                    placeholder="Tell us about yourself.."
+                    id="about-details"
+                  ></textarea>
+                </div>
+                <div class="col-sm-10 col-md-12 text-right">
+                  <button id="submit-form" class="form-submit-button">
+                    Submit
+                  </button>
+                </div>
+              </div>
+              <div class="form-container"></div>
+            </div>
+            <div class="col-sm-10 col-md-4">
+              <div class="address-card card mt-2">
+                <div class="cp_address-head">contact details</div>
+                <ul class="cp_address-container">
+                  <li>
+                    <div style="display: inline-block;">
+                      <i class="address-icon fa fa-map-marker map-marker"></i>
+                    </div>
+                    <div class="address-text">
+                      Balamurugan Timber <br />
+                      Depot and Sawmill, <br />
+                      #94/A RAJA STREET, Padi <br />
+                      Chennai 600050
+                    </div>
+                  </li>
+                  <li class="my-2">
+                    <i class="address-icon fa fa-phone-square phone-icon"></i>
+                    <div class="address-text">
+                      Office : 9043026120 <br />
+                      Mobile : 7845042005
+                    </div>
+                  </li>
+                  <li>
+                    <i class="address-icon fa fa-envelope"></i>
+                    <div class="address-text">
+                      domain@Info.Com
+                    </div>
+                  </li>
+                  <li class="working-hour">Working hours 08:00 - 22:00</li>
+                  <!-- <li class="social-icons">
+                  <i class="social-icon fa fa-facebook-f"></i>
+                  <i class="social-icon fa fa-twitter"></i>
+                  <i class="social-icon fa fa-google-plus"></i>
+                  <i class="social-icon fa fa-dribbble"></i>
+                  <i class="social-icon fa fa-linkedin"></i>
+                </li> -->
+                </ul>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact end -->
+
+      <!-- footer -->
+      <section class="contact-us-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-5">
+              <div class="contact-title">
+                Quick Links
+              </div>
+              <ul class="quick-link-container">
+                <li class="quick-link">
+                  <a href="./">Home</a>
+                </li>
+                <li class="quick-link">
+                  <a href="./index.html#about">About US</a>
+                </li>
+                <li class="quick-link">
+                  <a href="./index.html#services">Services</a>
+                </li>
+                <li class="quick-link">
+                  <a href="./products.html">Products</a>
+                </li>
+                <li class="quick-link">
+                  <a href="#home">Contact US</a>
+                </li>
+                <!-- <li class="quick-link">
+                <div class="social-icons">
+                  <i class="social-icon fa fa-facebook-f"></i>
+                  <i class="social-icon fa fa-twitter"></i>
+                  <i class="social-icon fa fa-google-plus"></i>
+                  <i class="social-icon fa fa-dribbble"></i>
+                  <i class="social-icon fa fa-linkedin"></i>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+            <div class="col-sm-10 col-md-6">
+              <div class="contact-title">
+                Contact US
+              </div>
+              <ul class="address-container">
+                <li class="address">
+                  <i
+                    class="address-icon fa fa-phone-square"
+                    style="font-size: 40px;"
+                  ></i>
+                  <div class="address-text">
+                    Office: 9043026120<br />
+                    Mobile:7845042005
+                  </div>
+                </li>
+                <li class="address">
+                  <i
+                    class="address-icon fa fa-envelope"
+                    style="font-size: 40px;"
+                  ></i>
+                  <div class="address-text">
+                    example@example.com <br />
+                    example@gmail.com
+                  </div>
+                </li>
+                <li class="address">
+                  <i
+                    class="address-icon fa fa-map-marker"
+                    style="font-size: 40px;"
+                  ></i>
+                  <div class="address-text">
+                    Balamurugan Timber Depot and Sawmill <br />
+                    #94/A RAJA STREET, Padi <br />
+                    Chennai 600050
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer end -->
+
+      <!-- copyright -->
+      <section class="copyright-section">
+        <span class="copyright-text">
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <span style="color: #f7a145;">Balamurugan Timbers</span>. All Rights
+          Reserved.
+        </span>
+      </section>
+      <!-- copyright end -->
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidenav">
+      <a class="closebtn" id="menu-btn-close">&times;</a>
+      <img src="assets/logo.png" alt="" class="sidebar-logo-img" />
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About US</a>
+      <a href="index.html#services">Services</a>
+      <a href="./products.html">Products</a>
+      <a href="#" class="active">Contact US</a>
+    </div>
+    <div class="sidebar-backdrop"></div>
+    <!-- sidebar end -->
+
+    <!-- plugins -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom script -->
+    <script>
+      $(document).ready(() => {
+        $(".navbar-2-logo").hide();
+        $(window).scroll(function () {
+          // navbar
+          if ($(window).scrollTop() >= 200) {
+            // console.log("scrolled");
+            $(".navbar-2-logo").show();
+            $(".navbar-2").addClass("fixed-header");
+          } else {
+            $(".navbar-2-logo").hide();
+            $(".navbar-2").removeClass("fixed-header");
+          }
+        });
+
+        let sideBar = $("#sidebar");
+        let mainContent = $("#main");
+        $("#menu-btn").on("click", function () {
+          sideBar.css("width", "250px");
+          mainContent.css("transform", "translateX(250px)");
+          $(".sidebar-backdrop").css("transform", "scale(1)");
+        });
+        $("#menu-btn-close,.sidebar-backdrop").on("click", function () {
+          sideBar.css("width", "0");
+          mainContent.css("transform", "unset");
+          $(".sidebar-backdrop").css("transform", "scale(0)");
+        });
+      });
+      map = new google.maps.Map(document.getElementById("map-container"), {
+        center: { lat: 13, lng: 80 },
+        zoom: 8,
+      });
+      var marker = new google.maps.Marker({
+        position: { lat: 13, lng: 80 },
+        map: map,
+      });
+    </script>
+  </body>
+</html>

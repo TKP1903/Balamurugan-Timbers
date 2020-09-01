@@ -1,0 +1,124 @@
+.main-product-section {
+  height: fit-content;
+  background-color: #f8f8f8;
+  /* background-color: rgba(255, 0, 0, 0.3); */
+  padding: 100px 0px 40px;
+}
+.main-product-cat-container {
+}
+.main-product-cat-container li a {
+  color: #7d8f99;
+  font-size: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.main-product-cat-container li:hover a {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #f7a145;
+  color: #fff !important;
+}
+.main-product-cat-container li .active {
+  color: #fff !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #f7a145 !important;
+}
+
+.product-desc-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.single-product-container {
+}
+.sp-product-image {
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  /* box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.3); */
+  transition: all 0.6s ease-in-out;
+}
+
+.sp-product-image img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.sp-product-image:hover img {
+  transform-origin: center center;
+  transform: scale(1.07);
+  z-index: 999;
+}
+
+/* The Modal (background) */
+.image-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999 !important; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  max-height: 100vh !important; /* Full height */
+  /* overflow: hidden; */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.image-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.1);
+}
+.image-modal-content {
+  margin: auto;
+  z-index: 999; /* Sit on top */
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  max-height: 98vh !important; /* Full height */
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.image-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.image-modal-close:hover,
+.image-modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .image-modal-content {
+    width: 100%;
+  }
+}
