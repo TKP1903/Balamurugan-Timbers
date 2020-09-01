@@ -341,7 +341,7 @@
 .product-section {
   position: relative;
   background-position: center;
-  background: url("../assets/img/bg-reapet/servicebgdark4.jpeg") no-repeat fixed;
+  /* background: url("../assets/img/bg-reapet/servicebgdark4.jpeg") no-repeat fixed; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
