@@ -158,23 +158,38 @@
                   <h2 class="head">Send us a message</h2>
                 </div>
                 <div class="col-md-6 col-sm-10">
-                  <input type="text" placeholder="Name" />
+                  <input type="text" placeholder="Name" id="name" />
                 </div>
                 <div class="col-md-6 col-sm-10">
-                  <input type="text" placeholder="Email Address" id="email" />
+                  <input
+                    type="text"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
                 </div>
                 <div class="col-md-6 col-sm-10">
-                  <input type="text" placeholder="Company" id="company" />
+                  <input
+                    type="text"
+                    placeholder="Company"
+                    id="company"
+                    required
+                  />
                 </div>
                 <div class="col-md-6 col-sm-10">
-                  <input type="text" placeholder="Phone" id="phoneno" />
+                  <input
+                    type="text"
+                    placeholder="Phone"
+                    id="phoneno"
+                    required
+                  />
                 </div>
                 <div class="col-sm-10 col-md-12">
                   <textarea
                     name=""
                     rows="10"
                     placeholder="Tell us about yourself.."
-                    id="about-details"
+                    id="about"
                   ></textarea>
                 </div>
                 <div class="col-sm-10 col-md-12 text-right">
@@ -185,6 +200,9 @@
               </div>
               <div class="form-container"></div>
             </div>
+            <!-- form end -->
+
+            <!-- Right side card content -->
             <div class="col-sm-10 col-md-4">
               <div class="address-card card mt-5 mt-md-2 mx-sm-2">
                 <div class="cp_address-head">contact details</div>
@@ -212,13 +230,6 @@
                     <div class="address-text">domain@Info.Com</div>
                   </li>
                   <li class="working-hour">Working hours 08:00 - 22:00</li>
-                  <!-- <li class="social-icons">
-                  <i class="social-icon fa fa-facebook-f"></i>
-                  <i class="social-icon fa fa-twitter"></i>
-                  <i class="social-icon fa fa-google-plus"></i>
-                  <i class="social-icon fa fa-dribbble"></i>
-                  <i class="social-icon fa fa-linkedin"></i>
-                </li> -->
                 </ul>
               </div>
               <br />
@@ -341,6 +352,53 @@
     <!-- Custom script -->
     <script>
       $(document).ready(() => {
+        // Email function start
+
+        // mail function
+        $("#submit-form").on("click", function () {
+          let name = $("#name").val();
+          let email = $("#email").val();
+          let company = $("#company").val();
+          let phoneno = $("#phoneno").val();
+          let about = $("#about").val();
+          console.log(name, email, company, phoneno, about);
+          if (
+            name == "" ||
+            email == "" ||
+            company == "" ||
+            phoneno == "" ||
+            about == ""
+          )
+            return alert("All field are required");
+          $.ajax(settings).done(function (response) {
+            // console.log(response);
+          });
+        });
+
+        var form = new FormData();
+        form.append("from", "rashid.pbt@gmail.com");
+        form.append("to", "rashis.pbt@gmail.com");
+        form.append("subject", "attachment test");
+        form.append("text", "the body");
+        form.append("cc", "mkane@mailgun.com");
+
+        var settings = {
+          url:
+            "https://api.mailgun.net/v3/sandbox7f15a19529584cca9bb4d477797cb1ab.mailgun.org/messages",
+          method: "POST",
+          timeout: 0,
+          headers: {
+            Authorization:
+              "Basic YXBpOjE5YzEzZTAzYmViNGY5N2E4YTBlNmJkNjdkNmU5MmRlLWJhYTU1Yzg0LWVjNDU3OTEw",
+          },
+          processData: false,
+          mimeType: "multipart/form-data",
+          contentType: false,
+          data: form,
+        };
+
+        // Email func ends-------
+
         $(".navbar-2-logo").hide();
         $(window).scroll(function () {
           // navbar
